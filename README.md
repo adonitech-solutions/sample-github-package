@@ -1,4 +1,4 @@
-# @adonitech/sample-api-package
+# @adonitech/sample-github-package
 
 Um pacote de exemplo para demonstração de publicação no GitHub Packages.
 
@@ -8,10 +8,10 @@ Este pacote pode ser instalado usando npm ou yarn:
 
 ```bash
 # Instalação com npm
-npm install @adonitech/sample-api-package
+npm install @adonitech/sample-github-package
 
 # Instalação com yarn
-yarn add @adonitech/sample-api-package
+yarn add @adonitech/sample-github-package
 ```
 
 ## Uso
@@ -20,7 +20,7 @@ Este pacote fornece funções utilitárias que podem ser importadas e usadas em 
 
 ```javascript
 // Importando o pacote
-const utils = require('@adonitech/sample-api-package');
+const utils = require('@adonitech/sample-github-package');
 
 // Usando as funções
 const resultado = utils.soma(5, 3);
