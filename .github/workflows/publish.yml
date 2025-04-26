@@ -32,7 +32,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add package.json package-lock.json
           git commit --allow-empty -m "chore: update version to ${VERSION} [skip ci]"
-          git push
+          git git push origin HEAD:main
       - run: npm ci
       - run: npm publish
         env:
