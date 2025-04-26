@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-          scope: '@adonitech'
+          scope: '@adonitech-solutions'
       - run: npm ci
       - run: npm publish
         env:
