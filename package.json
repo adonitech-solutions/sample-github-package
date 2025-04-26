@@ -1,6 +1,6 @@
 {
   "name": "@adonitech-solutions/sample-github-package",
-  "version": "1.1.2",
+  "version": "1.0.0",
   "description": "Um pacote de exemplo para demonstrar publicação no GitHub Packages",
   "main": "src/index.js",
   "scripts": {
@@ -16,13 +16,13 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adonitech-solutions/sample-github-package.git.git"
+    "url": "git+https://github.com/adonitech-solutions/sample-github-package.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/adonitech-solutions/sample-github-package.git/issues"
+    "url": "https://github.com/adonitech-solutions/sample-github-package/issues"
   },
-  "homepage": "https://github.com/adonitech-solutions/sample-github-package.git#readme"
+  "homepage": "https://github.com/adonitech-solutions/sample-github-package#readme"
 }
