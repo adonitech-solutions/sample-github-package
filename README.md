@@ -31,6 +31,9 @@ console.log(valorFormatado); // R$ 1.234,56
 
 const cpfValido = utils.validaCPF('123.456.789-09');
 console.log(cpfValido); // false ou true, dependendo se o CPF é válido
+
+const telefoneValido = utils.validaTelefoneBR('(11) 98765-4321');
+console.log(telefoneValido); // true
 ```
 
 ## Funções disponíveis
@@ -39,6 +42,8 @@ console.log(cpfValido); // false ou true, dependendo se o CPF é válido
 - `subtrai(a, b)`: Subtrai o segundo número do primeiro
 - `formataMoedaBR(valor)`: Formata um valor numérico para o formato de moeda brasileira
 - `validaCPF(cpf)`: Valida se uma string é um CPF válido
+- `validaCNPJ(cnpj)`: Valida se uma string é um CNPJ válido
+- `validaTelefoneBR(telefone)`: Valida se uma string é um número de telefone brasileiro válido
 
 ## Contribuição
 

@@ -100,11 +100,37 @@ function validaCNPJ(cnpj) {
   return true;
 }
 
+/**
+ * Valida se uma string é um número de telefone brasileiro válido
+ * @param {string} telefone - Número de telefone a ser validado
+ * @returns {boolean} true se for um número de telefone válido, false caso contrário
+ */
+function validaTelefoneBR(telefone) {
+  // Remove caracteres não numéricos
+  telefone = telefone.replace(/[^\d]+/g, '');
+  
+  // Verifica se é um número de celular (com 11 dígitos) ou fixo (com 10 dígitos)
+  if (telefone.length !== 10 && telefone.length !== 11) return false;
+  
+  // Verifica se o DDD é válido (entre 11 e 99)
+  const ddd = parseInt(telefone.substring(0, 2));
+  if (ddd < 11 || ddd > 99) return false;
+  
+  // Verifica se não são todos dígitos iguais
+  if (/^(\d)\1+$/.test(telefone)) return false;
+  
+  // Para celular, verifica se o primeiro dígito após o DDD é 9
+  if (telefone.length === 11 && telefone.charAt(2) !== '9') return false;
+  
+  return true;
+}
+
 // Exportando as funções para uso externo
 module.exports = {
   soma,
   subtrai,
   formataMoedaBR,
   validaCPF,
-  validaCNPJ
+  validaCNPJ,
+  validaTelefoneBR
 };
